@@ -15,12 +15,20 @@ body{
 h1{
   text-align: center;
   padding:30px 0 0 0;
+  font-size: 2.2em;
 }
 
 h4{
-  font-size:1.2em;
+  font-size:1.1em;
   text-align: center;
   padding:0 0 30px 0;
+}
+
+div.navbar{
+  background-color: #0bb7b1;
+  // text-shadow: 0 0 20px $wht;
+  // color:rgb(96, 23, 23);
+  color: rgb(95, 39, 1);
 }
 
 ul.timeline{
@@ -76,6 +84,8 @@ ul.timeline{
         transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
         transition-property: margin, background;
         font-weight:600;
+        cursor:pointer;
+        color: rgb(95, 39, 1);
         
         &::-webkit-details-marker { display:none; }
         
@@ -86,6 +96,21 @@ ul.timeline{
       
       p{
         padding:0 20px 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      div.read-more{
+        text-align: right;
+        padding: 0 40px 20px 0;
+
+        a{
+          color: #23b5af;
+          text-decoration: none;
+
+          &:hover{
+            color: #06908c;
+          }
+        }
       }
       
       &[open] summary{
