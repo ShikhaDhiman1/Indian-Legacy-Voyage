@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed Information</title>
+    <link rel="stylesheet" href="../CSS/more.css" />
+  </head>
+  <body>
+    <div id="body-cover"class="body-div">
+    <div class="navbar">
+      <div class="logo-bg"></div>
+      <a href="#"><img src="../images/logo.png" alt="image..." /></a>
+      <h1>Indian Legacy Voyage</h1>
+      <h4>(Inida's <i>Culture and Heritage</i> Timeline)</h4>
+      <!-- <a class = "login" href="#" target="_blank" rel="noopener noreferrer">Login/ SIgn Up</a> -->
+    </div>
+
+    <div class="container-details" id="more-details">
+      <div class="heading">
+        <h2>Heading of Event</h2>
+      </div>
+      <ul>
+        <li>
+          <h3>Time Period:</h3>
+          <span>December 1823</span>
+        </li>
+        <li>
+          <h3>Location:</h3>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sed
+          </span>
+        </li>
+        <li>
+          <h3>Information:</h3>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sed
+            laudantium, placeat veniam incidunt praesentium aut sequi officiis
+            quod perspiciatis eos odio quas! Error debitis corrupti, iusto
+            recusandae vitae ipsum!
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+            repudiandae suscipit aut sint, unde earum blanditiis saepe,
+            repellendus fugit optio iure assumenda fuga expedita, at animi nihil
+            consequuntur ea odit.</span
+          >
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="div-form" id="form-div">
+      <center><h3 class="login">SIGN UP</h3></center>
+      <!-- <hr> -->
+      <form action="#" onsubmit="formAction()">
+        <label for="Fname">First Name:<span class="sup"> *</span></label>
+        <input
+          type="text"
+          name="fname"
+          id="Fname"
+          required
+          placeholder="Your first name"
+        /><br />
+        <label for="Lname">Last Name:</label>
+        <input
+          type="text"
+          name="lname"
+          id="Lname"
+          placeholder="Your last name"
+        /><br />
+        <label for="email">E-mail Id:<span class="sup"> *</span></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="E-mail"
+        /><br />
+        <label for="passw">Password:<span class="sup"> *</span></label>
+        <input
+          type="password"
+          name="password"
+          id="passw"
+          required
+          placeholder="password"
+        /><br />
+        <label for="confirmPassword">Confirm Password:<span class="sup"> *</span></label>
+        <input
+          type="password"
+          name="confpass"
+          id="confirmPassword"
+          required
+          placeholder="password"
+        /><br />
+
+        <input id="formSubmit" type="submit" value="SUBMIT">
+        <hr>
+        <p class="sign-up">Already a have an account? <a onclick="clickSignIn()" id = "link-login" href="#">SIGN IN</a> </p>
+      </form>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -10,14 +10,22 @@ $bg     : darken($wht,2);
 body{
   font-family: 'Raleway', sans-serif;
   background:$bg;
-  background-image: url("/images/output-onlinepngtools2.png");
+  background-image: url("/images/home_bg.png");
   background-size: auto;
   background-attachment: fixed;
   
 }
 
+.container{
+  display: block;
+}
+
 div.navbar{
-  margin-top:-20px;
+  z-index: 5;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-top:-25px;
   background-color: rgb(13, 214, 208, 0.85);
   // text-shadow: 0 0 20px $wht;
   color: rgb(125, 56, 10);
@@ -27,8 +35,8 @@ div.navbar{
     background-color: $bg;
     width: 300px;
     height: 300px;
-    top:-144.2px;
-    left:-140px;
+    top: -144.2px;
+    left: -140px;
     border-bottom-right-radius: 50%;
     // border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -195,7 +203,7 @@ ul.timeline{
         left: 20px;
         margin-left: -25px;
         background-color: $bg;
-        z-index: 999;
+        z-index: 3;
         border-radius: 50%;
         font-family: Font Awesome\ 5 Free;
         &:before{content: "\f192";}
@@ -208,11 +216,6 @@ ul.timeline{
           color: $green;
           &:before{content: "\f058";}
         }
-        
-        // &.working {
-        //   color: $yellow;
-        //   &:before{content: "\f017";}
-        // }
         
       }
     }
