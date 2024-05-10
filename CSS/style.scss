@@ -10,25 +10,65 @@ $bg     : darken($wht,2);
 body{
   font-family: 'Raleway', sans-serif;
   background:$bg;
-}
-
-h1{
-  text-align: center;
-  padding:30px 0 0 0;
-  font-size: 2.2em;
-}
-
-h4{
-  font-size:1.1em;
-  text-align: center;
-  padding:0 0 30px 0;
+  background-image: url("/images/output-onlinepngtools2.png");
+  background-size: auto;
+  background-attachment: fixed;
+  
 }
 
 div.navbar{
-  background-color: #0bb7b1;
+  margin-top:-20px;
+  background-color: rgb(13, 214, 208, 0.85);
   // text-shadow: 0 0 20px $wht;
-  // color:rgb(96, 23, 23);
-  color: rgb(95, 39, 1);
+  color: rgb(125, 56, 10);
+
+  div.logo-bg{
+    position: absolute;
+    background-color: $bg;
+    width: 300px;
+    height: 300px;
+    top:-144.2px;
+    left:-140px;
+    border-bottom-right-radius: 50%;
+    // border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+
+  img{
+    position: absolute;
+    width: 110px;
+  }
+
+  h1{
+    text-align: center;
+    padding:30px 0 0 0;
+    font-size: 2.2em;
+    color: #ffffff;
+  }
+  
+  h4{
+    font-size:1.1em;
+    text-align: center;
+    padding:0 0 30px 0;
+    
+    margin-top: -10px;
+  }
+
+  .login{
+    font-size: 0.8em;
+    position: absolute;
+    top:44px;
+    left: 89.52%;
+    text-decoration: none;
+    color:#fff;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding: 5px 10px;
+
+    &:hover{
+      box-shadow: 0 0 7px $bg;
+    }
+  }
 }
 
 ul.timeline{
@@ -90,7 +130,9 @@ ul.timeline{
         &::-webkit-details-marker { display:none; }
         
         &:hover{
-          background:rgba($blk, 0.1);
+          // background:rgba($blk, 0.1);
+          background:#23b5af;
+          color: $wht;
         }
       }
       
@@ -117,6 +159,8 @@ ul.timeline{
         margin-bottom:20px;
         padding-bottom:20px;
         border-bottom:1px solid rgba($blk, 0.1);
+        background-color: #23b5af;
+        color: $wht;
       }
     }
     
