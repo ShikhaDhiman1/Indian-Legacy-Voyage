@@ -98,13 +98,14 @@
           id="confirmPassword"
           required
           placeholder="password"
+          onkeyup="validate_password()"
         /><br />
-
+        <span id="wrong_pass_alert"></span>
         <input id="formSubmit" type="submit" value="SUBMIT">
         <hr>
         <p class="sign-up">Already a have an account? <a onclick="clickSignIn()" id = "link-login" href="#">SIGN IN</a> </p>
       </form>
     </div>
-    <script src="./Script/script.js"></script>
+    <script src="/Script/script.js"></script>
   </body>
 </html>
