@@ -65,7 +65,6 @@ div.navbar{
   .login{
     font-size: 0.8em;
     position: absolute;
-    top:44px;
     left: 89.52%;
     text-decoration: none;
     color:#fff;
@@ -77,6 +76,72 @@ div.navbar{
       box-shadow: 0 0 7px $bg;
     }
   }
+}
+
+// #profile-dropdown{
+//   display: none;
+//   z-index: 7;
+//   width:8em;
+//   position: absolute;
+//   top:5em;
+//   right:20px;
+//   background-color: #fff;
+//   border:1px solid #23b5af;
+//   border-radius: 5px;
+
+//   a {
+//     display: block;
+//     padding:10px 8px;
+//     text-decoration: none;
+//     color: $green;
+//     transition: background-color 0.2s;
+
+//     &:hover{
+//       background-color: rgb(35, 181, 175, 0.05);
+//     }
+//   }
+//   #profile{
+//     border-bottom: 1px solid rgb(35, 181, 175, 0.2);
+//   }
+// }
+
+
+.div-social {
+  height:150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top:50%;
+  left:-3px;
+
+  i{
+    color:white;
+    font-size:23px;
+    width:1em;
+    padding:2.5px;
+    text-align: center;
+    margin-top:13px;
+    border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    transition: padding-left 0.25s;
+
+    &:hover{
+      padding-left: 7px;
+    }
+  }
+  .fa-instagram{   
+    background-image: linear-gradient( #8a3ab9,#e95950,#bc2a8d,#fccc63);
+  }
+  .fa-twitter{
+    background-color: rgb(29,161,242);
+  }
+  .fa-linkedin-square{
+    background-color: rgb(10, 102, 194);
+  }
+  .fa-facebook{
+    background-color:#4267B2;
+  } 
 }
 
 ul.timeline{

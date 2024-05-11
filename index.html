@@ -10,24 +10,31 @@
       href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
       rel="stylesheet"
     />
-    <!--CSS Link to AOS library-->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    /> -->
-     <!--JS link to AOS library-->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
   </head>
   <body>
     <div class="navbar">
       <div class="logo-bg"></div>
       <a href="#"><img src="/images/logo.png" alt="image..."></a>
       <h1>Indian Legacy Voyage</h1>
-      <h4>(Inida's <i>Culture and Heritage</i> Timeline)</h4>
-      <a onclick = 'clickUserLogin()' id = "login_user" class = "login" href="#">Login/ Sign Up</a>
+      <h4>(India's <i>Culture and Heritage</i> Timeline)</h4>
+      <div id="user_home"><a onclick = 'clickUserLogin()' id = "user_login" class = "login" href="#">Login/ Sign Up</a></div>
     </div>
-    
+
+    <div id="profile-dropdown">
+      <a id="profile" href="#">Profile</a>
+      <a id="logOut" href="#">Log out</a>
+    </div>
+
+    <div class="div-social">
+      <a href=""><i class="fa fa-instagram"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-linkedin-square"></i></a>
+    </div>
+
     <div class="container">
       <ul class="timeline">
         <li class="timeline">
@@ -131,10 +138,11 @@
         </li>
       </ul>
     </div>
-    <div class="div-form" id="form-div" style="display: none;">
-      <center><h3 class="login">SIGN UP</h3></center>
+    <div class="div-form home" id="form-div" style="display: none;">
+      <i onclick = "clickClose()" class="fa fa-times-circle-o"></i>
+      <center><h3 class="form-heading">SIGN UP</h3></center>
       <!-- <hr> -->
-      <form action="#" onsubmit="formAction()">
+      <form action="#" onsubmit="formActionHome()">
         <label for="Fname">First Name:<span class="sup"> *</span></label>
         <input
           type="text"
@@ -177,7 +185,7 @@
 
         <input id="formSubmit" type="submit" value="SUBMIT">
         <hr>
-        <p class="sign-up">Already a have an account? <a onclick="clickSignIn()" id = "link-login" href="#">SIGN IN</a> </p>
+        <p class="sign-up">Already a have an account? <a onclick="clickSignInHome()" id = "link-login" href="#">SIGN IN</a> </p>
       </form>
     </div>
 

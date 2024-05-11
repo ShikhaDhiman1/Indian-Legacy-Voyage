@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detailed Information</title>
     <link rel="stylesheet" href="../CSS/more.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div id="body-cover"class="body-div">
@@ -13,7 +15,12 @@
       <a href="#"><img src="../images/logo.png" alt="image..." /></a>
       <h1>Indian Legacy Voyage</h1>
       <h4>(Inida's <i>Culture and Heritage</i> Timeline)</h4>
-      <!-- <a class = "login" href="#" target="_blank" rel="noopener noreferrer">Login/ SIgn Up</a> -->
+      <div id="user"><a class = "login" id="login_user" href="#">Login/Sign Up</a></div>
+    </div>
+
+    <div id="profile-dropdown">
+      <a id="profile" href="#">Profile</a>
+      <a id="logOut" href="#">Log out</a>
     </div>
 
     <div class="container-details" id="more-details">
@@ -50,7 +57,7 @@
     </div>
 
     <div class="div-form" id="form-div">
-      <center><h3 class="login">SIGN UP</h3></center>
+      <center><h3 class="form-heading">SIGN UP</h3></center>
       <!-- <hr> -->
       <form action="#" onsubmit="formAction()">
         <label for="Fname">First Name:<span class="sup"> *</span></label>

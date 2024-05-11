@@ -55,6 +55,31 @@ div.navbar {
     box-shadow: 0 0 7px #fafafa;
   }
 
+  #profile-dropdown {
+    display: none;
+    z-index: 7;
+    width: 8em;
+    position: fixed;
+    top: 5em;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #23b5af;
+    border-radius: 5px;
+  }
+  #profile-dropdown a {
+    display: block;
+    padding: 10px 8px;
+    text-decoration: none;
+    color: #23b5af;
+    transition: background-color 0.2s;
+  }
+  #profile-dropdown a:hover {
+    background-color: rgba(35, 181, 175, 0.05);
+  }
+  #profile-dropdown #profile {
+    border-bottom: 1px solid rgba(35, 181, 175, 0.2);
+  }
+
 div.container-details {
     
     margin: 40px 90px 20px 90px;
@@ -91,18 +116,25 @@ div.container-details {
     font-weight: 600;
     color: rgb(95, 39, 1);
     width: 35%;
-    /* position:absolute; */
     left: 30%;
     position: fixed;
     top:20px;
-    /* left:30%; */
     background-color: white;
     border:1px solid rgba(10, 159, 154, 0.85);
-    /* box-shadow: 0 0 12px rgba(13, 214, 208, 0.3); */
     padding: 0 42px 10px 42px;
     border-radius: 15px;
     display: block;
     margin-left: -10px;
+    transition: display 2.6s;
+  }
+
+  .div-form > i{
+    position: relative;
+    top:10px;
+    left:100%;
+    cursor: pointer;
+    font-size: 23px;
+    color: #06afaa;
   }
 
 h3.form-heading{
@@ -125,12 +157,13 @@ h3.form-heading{
     height: 25px;
     margin-top: 2px;
     margin-bottom: 10px;
+    transition: background-color 0.4s, border 0.2s;
   }
 
   input:not(input[type=submit]):focus{
     background-color: white;
-    /* border-bottom: ; */
     border: 2px solid #8c8c8c;
+    /* background-color:rgba(13, 214, 208, 0.1); */
 
   }
 

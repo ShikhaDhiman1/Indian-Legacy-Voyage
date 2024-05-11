@@ -48,7 +48,6 @@ div.navbar h4 {
 div.navbar .login {
   font-size: 0.8em;
   position: absolute;
-  top: 44px;
   left: 89.52%;
   text-decoration: none;
   color: #fff;
@@ -58,6 +57,42 @@ div.navbar .login {
 }
 div.navbar .login:hover {
   box-shadow: 0 0 7px #fafafa;
+}
+
+.div-social {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 50%;
+  left: -3px;
+}
+.div-social i {
+  color: white;
+  font-size: 23px;
+  width: 1em;
+  padding: 2.5px;
+  text-align: center;
+  margin-top: 13px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: padding-left 0.25s;
+}
+.div-social i:hover {
+  padding-left: 7px;
+}
+.div-social .fa-instagram {
+  background-image: linear-gradient(#8a3ab9, #e95950, #bc2a8d, #fccc63);
+}
+.div-social .fa-twitter {
+  background-color: rgb(29, 161, 242);
+}
+.div-social .fa-linkedin-square {
+  background-color: rgb(10, 102, 194);
+}
+.div-social .fa-facebook {
+  background-color: #4267B2;
 }
 
 ul.timeline {
