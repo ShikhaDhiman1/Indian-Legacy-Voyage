@@ -7,14 +7,6 @@ $yellow : #eeba4c;
 $border : lighten($blk,85);
 $bg     : darken($wht,2);
 
-body{
-  font-family: 'Raleway', sans-serif;
-  background:$bg;
-  background-image: url("/images/home_bg.png");
-  background-size: auto;
-  background-attachment: fixed;
-  
-}
 
 .container{
   display: block;

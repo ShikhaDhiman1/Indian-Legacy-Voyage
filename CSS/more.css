@@ -3,7 +3,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     background-color: rgb(249, 248, 248);
-  background-image: url("/images/home_bg.png");
+  background-image: url("images/home_bg.png");
   background-size: auto;
   background-attachment: fixed;
 }
