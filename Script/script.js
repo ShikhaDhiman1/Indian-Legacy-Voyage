@@ -12,6 +12,7 @@ function validate_password() {
     document.getElementById("formSubmit").style.opacity = 0.4;
     document.getElementById("formSubmit").style.cursor = "not-allowed";
   } else {
+    document.getElementById("wrong_pass_alert").style.color = "green";
     document.getElementById("wrong_pass_alert").innerHTML = "Correct password!";
     document.getElementById("formSubmit").disabled = false;
     document.getElementById("formSubmit").style.opacity = 1;
@@ -59,7 +60,7 @@ function clickClose() {
 
 function clickSignUpHome() {
   homePageForm.innerHTML =
-    "<i onclick = 'clickClose()' class='fa fa-times-circle-o'></i> <center><h3 class='form-heading'>SIGN UP</h3></center> <form action='#' onsubmit='formActionHome()'> <label for='Fname'>First Name:<span class='sup'> *</span></label> <input type='text' name='fname' id='Fname' required placeholder='Your first name' /><br /> <label for='Lname'>Last Name:</label> <input type='text' name='lname' id='Lname' placeholder='Your last name' /><br /> <label for='email'>E-mail Id:<span class='sup'> *</span></label> <input type='email' name='email' id='email' required placeholder='E-mail'  /><br /> <label for='passw'>Password:<span class='sup'> *</span></label> <input type='password' name='password' id='passw' required placeholder='password' /><br /> <label for='confirmPassword'>Confirm Password:<span class='sup'> *</span></label> <input type='password' name='confpass' id='confirmPassword' required placeholder='password' /><br /> <input id='formSubmit_register' type='submit' value='SUBMIT'> <hr> <p class='sign-up'>Already a have an account? <a onclick = 'clickSignInHome()' id = 'link-login' href='#'>SIGN IN</a> </p> </form>";
+    "<i onclick = 'clickClose()' class='fa fa-times-circle-o'></i> <center><h3 class='form-heading'>SIGN UP</h3></center> <form action='#' onsubmit='formActionHome()'> <label for='Fname'>First Name:<span class='sup'> *</span></label> <input type='text' name='fname' id='Fname' required placeholder='Your first name' /><br /> <label for='Lname'>Last Name:</label> <input type='text' name='lname' id='Lname' placeholder='Your last name' /><br /> <label for='email'>E-mail Id:<span class='sup'> *</span></label> <input type='email' name='email' id='email' required placeholder='E-mail'  /><br /> <label for='passw'>Password:<span class='sup'> *</span></label> <input type='password' name='password' id='passw' required placeholder='password' /><br /> <label for='confirmPassword'>Confirm Password:<span class='sup'> *</span></label> <input type='password' name='confpass' id='confirmPassword' required placeholder='password' onkeyup='validate_password()'/><br /> <input id='formSubmit_register' type='submit' value='SUBMIT'> <hr> <p class='sign-up'>Already a have an account? <a onclick = 'clickSignInHome()' id = 'link-login' href='#'>SIGN IN</a> </p> </form>";
 }
 
 function clickSignInHome() {
@@ -74,6 +75,25 @@ function toggleDropdown() {
     boxProfile.style.display = "none";
   } else if (window.getComputedStyle(boxProfile).display == "none") {
     boxProfile.style.display = "block";
+  }
+}
+
+
+function toggleProfile(){
+  var profileContainer = document.getElementsByClassName("profile-container")[0];
+  if(document.querySelector('body').contains(profileContainer)){
+    profileContainer.style.display = "none";
+    profileContainer.remove();
+  }else{
+    document.querySelector('body').innerHTML += `<div class="profile-container">
+    <div class="user-profile">
+      <center><i style='font-size:80px; color:#06908c;' class='fa fa-user-circle-o'></i></center>
+      <p><strong>Name: </strong><span class="name">Shikha Dhiman</span></p>
+      <p><strong>Email: </strong><span class="name">xxxxx@gmail.com</span></p>
+      <p><strong>Contact: </strong><span class="name">9999999999</span></p>
+      <p><strong>Country: </strong><span class="name">India</span></p>
+    </div>
+  </div>`;
   }
 }
 

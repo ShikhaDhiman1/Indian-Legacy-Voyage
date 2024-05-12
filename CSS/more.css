@@ -80,6 +80,21 @@ div.navbar {
     border-bottom: 1px solid rgba(35, 181, 175, 0.2);
   }
 
+  div.profile-container div.user-profile{
+    z-index: 5;
+    position: fixed;
+    top:5em;
+    left: 69.6%;
+    padding: 30px; 
+    background-color: white;
+    border-radius: 7px;
+    border:1px solid rgb(125, 56, 10, 0.6);
+    width:fit-content;
+  }
+  .user-profile span{
+    color: rgb(125, 56, 10);
+  }
+
 div.container-details {
     
     margin: 40px 90px 20px 90px;

@@ -30,7 +30,7 @@
     </div>
 
     <div id="profile-dropdown">
-      <a id="profile" href="#">Profile</a>
+      <a onclick="toggleProfile()" id="profile" href="#">Profile</a>
       <a id="logOut" href="#">Log out</a>
     </div>
 
@@ -246,8 +246,9 @@
           id="confirmPassword"
           required
           placeholder="password"
+          onkeyup="validate_password()"
         /><br />
-
+        <span id="wrong_pass_alert"></span>
         <input id="formSubmit" type="submit" value="SUBMIT" />
         <hr />
         <p class="sign-up">
@@ -256,7 +257,6 @@
         </p>
       </form>
     </div>
-    <!-- AIzaSyBsZqh60z7A69nwon8xV3xoa5P6vitAnGA -->
     <script src="Script/script.js"></script>
   </body>
 </html>
