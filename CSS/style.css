@@ -87,6 +87,11 @@ div.navbar .login:hover {
   background-color: #4267B2;
 }
 
+iframe{
+  box-shadow:0 0 15px rgba(10, 51, 49, 0.4);
+  border-radius: 7px;
+}
+
 ul.timeline {
   margin: 0 100px;
 }
@@ -155,15 +160,23 @@ ul.timeline {
   padding: 0 20px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.timeline > li .panel div.read-more {
-  text-align: right;
-  padding: 0 40px 20px 0;
+.timeline > li .panel .links{
+  padding-bottom: 15px;
 }
-.timeline > li .panel div.read-more a {
+.timeline > li .panel span.get-map{
+  padding-left:40px;
+}
+.timeline > li .panel span.read-more {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding-right:40px;
+}
+.timeline > li .panel span a  {
   color: #23b5af;
   text-decoration: none;
 }
-.timeline > li .panel div.read-more a:hover {
+.timeline > li .panel span.read-more a:hover {
   color: #06908c;
 }
 .timeline > li .panel[open] summary {
@@ -218,4 +231,8 @@ ul.timeline {
 }
 .timeline > li > .icon.done:before {
   content: "\f058";
-}/*# sourceMappingURL=style.css.map */
+}
+
+.div-map{
+  text-align: center;
+}
