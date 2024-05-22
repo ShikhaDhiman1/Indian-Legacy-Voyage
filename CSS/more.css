@@ -117,6 +117,15 @@ div.container-details {
     color: rgb(95, 39, 1);
   }
 
+  .div-map{
+    text-align: center;
+  }
+  
+  iframe{
+    box-shadow:0 0 15px rgba(2, 55, 55, 0.45);
+    border-radius: 7px;
+  }
+
   /* FORM */
   div.body-div{
     opacity: 0.1;

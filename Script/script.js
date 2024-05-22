@@ -97,109 +97,42 @@ function toggleProfile(){
   }
 }
 
-function showMaps() {
-  const container = document.getElementById("container").innerHTML = `<div class="div-map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d186184.92177880395!2d77.22699708452369!3d28.659424157075215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715489557995!5m2!1sen!2sin"
-      width="1200"
-      height="460"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>`;
+function showMore() {
+  const container = document.getElementById("container").innerHTML = `<div class="container-details" id="more-details">
+  <div class="heading">
+    <h2>Heading of Event</h2>
+  </div>
+  <ul>
+    <li>
+      <h3>Time Period:</h3>
+      <span>December 1823</span>
+    </li>
+    <li>
+      <h3>Location:</h3>
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sed
+      </span>
+    </li>
+    <li>
+      <h3>Information:</h3>
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sed
+        laudantium, placeat veniam incidunt praesentium aut sequi officiis
+        quod perspiciatis eos odio quas! Error debitis corrupti, iusto
+        recusandae vitae ipsum!
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        repudiandae suscipit aut sint, unde earum blanditiis saepe,
+        repellendus fugit optio iure assumenda fuga expedita, at animi nihil
+        consequuntur ea odit.</span
+      >
+    </li>
+  </ul>
+</div>`;
 }
 
-// function myMap() {
-//   var mapProp = {
-//       center:new google.maps.LatLng(51.508742,-0.120850),
-//       zoom:5,
-//   };
-//   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-//   }
-
-// <!doctype html>
-// <!--
-// @license
-// Copyright 2023 Google LLC. All Rights Reserved.
-// SPDX-License-Identifier: Apache-2.0
-// -->
-// <html>
-//  <head>
-//    <title>Info Windows</title>
-//    <script>
-//      /**
-//       * @license
-//       * Copyright 2023 Google LLC. All Rights Reserved.
-//       * SPDX-License-Identifier: Apache-2.0
-//       */
-
-//      // This example displays a marker at the center of Australia.
-//      // When the user clicks the marker, an info window opens.
-//      async function initMap() {
-//        const contentString = `
-//          <div>
-//            <h1>Uluru</h1>
-//            <div>
-//              <p>
-//                <b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large
-//                sandstone rock formation in the southern part of the
-//                Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi)
-//                south west of the nearest large town, Alice Springs; 450&#160;km
-//                (280&#160;mi) by road. Kata Tjuta and Uluru are the two major
-//                features of the Uluru - Kata Tjuta National Park. Uluru is
-//                sacred to the Pitjantjatjara and Yankunytjatjara, the
-//                Aboriginal people of the area. It has many springs, waterholes,
-//                rock caves and ancient paintings. Uluru is listed as a World
-//                Heritage Site.
-//              </p>
-//              <p>
-//                Attribution: Uluru,
-//                <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">
-//                  https://en.wikipedia.org/w/index.php?title=Uluru
-//                </a>
-//                (last visited June 22, 2009).
-//              </p>
-//            </div>
-//          </div>`;
-//        const infoWindow = new google.maps.InfoWindow({
-//          content: contentString,
-//          ariaLabel: "Uluru",
-//        });
-
-//        const marker = document.querySelector('gmp-advanced-marker');
-//        marker.addEventListener('gmp-click', () => {
-//          infoWindow.open({anchor: marker});
-//        });
-//      }
-
-//      window.initMap = initMap;
-//    </script>
-//    <style>
-//      /**
-//       * @license
-//       * Copyright 2023 Google LLC. All Rights Reserved.
-//       * SPDX-License-Identifier: Apache-2.0
-//       */
-
-//      /*
-//       * Optional: Makes the sample page fill the window.
-//       */
-//      html,
-//      body {
-//        height: 100%;
-//        margin: 0;
-//      }
-//    </style>
-//  </head>
-//  <body>
-//    <gmp-map center="-25.363, 131.044" zoom="4" map-id="DEMO_MAP_ID">
-//      <gmp-advanced-marker position="-25.363, 131.044" title="Uluru" gmp-clickable></gmp-advanced-marker>
-//    </gmp-map>
-//    <script
-//      src="https://maps.googleapis.com/maps/api/js?key=INSERT_YOUR_API_KEY&callback=initMap&libraries=marker&v=beta&solution_channel=GMP_CCS_infowindows_v2"
-//      defer
-//    ></script>
-//  </body>
-// </html>
+let dataset = [
+  {sno:1, event: 'Indus Valley Civilization', time:'2600 BCE - 1900 BCE', location:'Present-day Pakistan (Indus Valley region)', description:"The Indus Valley Civilization, also known as the Harappan Civilization, was one of the world's earliest urban civilizations. It flourished in the basins of the Indus River and the Ghaggar-Hakra River in present-day Pakistan and northwest India. The civilization is known for its advanced urban planning, sophisticated drainage systems, and impressive craftsmanship."},
+  {sno:2, event:'Ajanta and Ellora Caves', time:'2nd century BCE - 10th century CE', location:'Maharashtra', description:"These cave complexes contain Buddhist, Hindu, and Jain temples and monasteries, famous for their exquisite rock-cut architecture and ancient Indian art."},
+  {sno:3, event:'Vedic Period', time:'1500 BCE - 500 BCE',location:'Indo-Gangetic Plain, primarily in present-day northern India', description:"The Vedic Period is named after the Vedas, the oldest sacred texts of Hinduism. It is characterized by the Indo-Aryan migration into the Indian subcontinent and the development of the early Vedic literature, which includes the Rigveda, Samaveda, Yajurveda, and Atharvaveda. This period laid the foundation of Hinduism and saw the emergence of early Hindu rituals, philosophies, and social structures." }
+];
